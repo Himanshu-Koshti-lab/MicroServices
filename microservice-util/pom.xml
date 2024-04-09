@@ -8,36 +8,33 @@
 		<version>3.2.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.core</groupId>
-	<artifactId>microservice-core</artifactId>
-	<version>0.0.2</version>
-	<name>microservice-core</name>
-	<description>Common resource</description>
+	<groupId>com.util</groupId>
+	<artifactId>microservice-util</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>microservice-util</name>
+	<description>Common Utils</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-common</artifactId>
-			<version>2.0.2</version>
+			<groupId>com.core</groupId>
+			<artifactId>microservice-core</artifactId>
+			<version>0.0.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
